@@ -57,6 +57,48 @@ public class RoteiroTest {
     	for (int i : values)
     		bst.add(i);
 		assertTrue(bst.isAVL());
-    }
 
+		//Meus testes
+		bst = new BST();
+		values = new int[]{10, 1, 12};
+    	for (int i : values)
+    		bst.add(i);
+		assertTrue(bst.isAVL());
+
+		bst = new BST();
+		values = new int[]{1, 2, 4};
+    	for (int i : values)
+    		bst.add(i);
+		assertFalse(bst.isAVL());
+		
+		bst = new BST();
+		values = new int[]{10,5,15,1};
+    	for (int i : values)
+    		bst.add(i);
+		assertTrue(bst.isAVL());
+			
+		bst = new BST();
+		values = new int[]{10,5,1};
+    	for (int i : values)
+    		bst.add(i);
+		assertFalse(bst.isAVL());
+
+		bst = new BST();
+		values = new int[]{10,5,7};
+    	for (int i : values)
+    		bst.add(i);
+		assertFalse(bst.isAVL());
+
+		bst = new BST();
+		values = new int[]{10, 15, 12};
+    	for (int i : values)
+    		bst.add(i);
+		assertFalse(bst.isAVL());
+
+		bst = new BST();
+		values = new int[]{10,12,14,9};
+    	for (int i : values)
+    		bst.add(i);
+		assertTrue(bst.isAVL());
+	}
 }
